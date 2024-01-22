@@ -1,38 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: 'Cabin', sans-serif;
+    background-color: #f0f5f9;
+    color: #2c3e50;
+    margin: 0; /* Remove default margin for full-width body */
 }
 
 #tentacles {
     width: 50px;
 }
 
+
 .header {
     display: flex;
     background-color: lightblue;
     padding: 1%;
+    justify-content: space-between; /* Adjusted alignment */
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
 }
 
+#search-input {
+    margin-right: 10px; /* Add some space between the search bar and the link */
+}
+
+#our-games-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Added transition for a smooth color change on hover */
+}
+
+#our-games-link:hover {
+    color: #3498db; /* Adjusted color on hover */
+}
+
 .stats-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
     padding: 1%;
-    margin: 1%;
     width: 100%;
     text-align: center;
+    flex: 1;
+    margin: 0 10px;
 }
 
-#num-contributions, #total-raised, #num-games {
+#num-contributions,
+#total-raised,
+#num-games {
     font-size: 50px;
 }
 
@@ -67,9 +102,57 @@ body {
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+/* Example: Add hover effect to buttons */
+button:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+#our-games-btn {
+    font-family: 'Cabin', sans-serif;
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2c3e50;
+    background-color: #a8b0bc;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    scroll-behavior: smooth;
+}
+
+#our-games-btn:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: lightblue;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Example: Update color scheme and font */
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #f0f5f9;
+    color: #2c3e50;
 }
