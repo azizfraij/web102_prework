@@ -29,7 +29,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/u780vYu' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Website video walkthrough](Walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ShareX  
